@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			console.log(navigator.userAgent);
+			//console.log(navigator.appName)
+			// console.log(navigator.appVersion)
+
+			let navegador = navigator.userAgent;
+			navegador = navegador.toLowerCase();
+
+			if (navegador.indexOf("edg") != -1) {
+				alert("Tu Navegador es Edge");
+			} else if (navegador.indexOf("firefox") != -1) {
+				alert("Tu Navegador es Firefox");
+			} else if (
+				!navegador.indexOf("edg") != -1 &&
+				!navegador.indexOf("firefox") != -1 &&
+				!navegador.indexOf("opr") != -1
+			) {
+				alert("Tu Navegador es Chrome");
+			} else {
+				alert(" Tu navegador es un truño!!!");
+			}
+		</script>
+	</body>
+</html>
