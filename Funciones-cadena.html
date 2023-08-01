@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			let cadena = "Hoy es Martes";
+			console.log(cadena.length);
+			console.log("prueba: " + cadena.charAt(12));
+			console.log(cadena.toLowerCase());
+			console.log(cadena.toUpperCase());
+
+			for (let i = 0; i < cadena.length; i++) {
+				let letra = cadena.charAt(i);
+				console.log(letra);
+			}
+
+			//indexOf busca una cadena/caracter de otra cadena, si lo encuentra devuelve la posicion del caracter y si no devuelve -1
+
+			let numero = cadena.indexOf("Hoy");
+			console.log(numero);
+
+			if (numero != -1) {
+				console.log("Palabra no encontrada");
+			} else {
+				console.log("palabra encontrada");
+			}
+		</script>
+	</body>
+</html>
